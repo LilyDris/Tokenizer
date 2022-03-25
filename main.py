@@ -100,6 +100,7 @@ if __name__ == "__main__":
     tk.currLiteral = tk.token_literals[0]
     while tk.getToken() != 33:
         print(tk.getToken())
-        output.write(tk.getToken())
+        output.write(str(tk.getToken()))
+        output.write('\n')
         tk.skipToken()
     print(tk.getToken())
